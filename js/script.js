@@ -3,9 +3,11 @@ function newItem(){
 
 
    let li = document.createElement("li");
-   let inputValue = document.getElementById("input").value;
+   let inputValue = document.getElementById("input").value.trim();
    let text = document.createTextNode(inputValue);
    li.appendChild(text);
+
+
 
    if (inputValue === '') {
      alert("You must write something!");
